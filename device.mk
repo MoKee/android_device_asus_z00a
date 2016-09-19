@@ -27,7 +27,7 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalv
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 DEVICE_PACKAGE_OVERLAYS := \
-    device/asus/Z00A/overlay
+    device/asus/z00a/overlay
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
@@ -35,8 +35,8 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_COPY_FILES += \
-    device/asus/Z00A/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/asus/Z00A/nfc/libnfc-brcm-20795a20.conf:system/etc/libnfc-brcm-20795a20.conf
+    device/asus/z00a/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/asus/z00a/nfc/libnfc-brcm-20795a20.conf:system/etc/libnfc-brcm-20795a20.conf
 
 # NFC packages
 PRODUCT_PACKAGES += \
@@ -50,7 +50,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.sys.perf.device.full=2333000 \
     ro.sys.perf.device.touchboost=1833000
 
-$(call inherit-product-if-exists, vendor/asus/Z00A/Z00A-vendor.mk)
+$(call inherit-product-if-exists, vendor/asus/z00a/z00a-vendor.mk)
 
 # Inherit from mofd-common
 $(call inherit-product, device/asus/mofd-common/mofd.mk)
